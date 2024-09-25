@@ -107,8 +107,14 @@ console.log('Exercise 10 Result:', calculateGrade(85));
 function createUserName(firstName , lastName){
     let firstThreeFirstName = firstName.substring(0,3);
     let lastThreeLastName = lastName.substring(0,3);
-    let totalChar = firstName.length + lastName.length 
-    let userName = firstThreeFirstName + lastThreeLastName + totalChar
+    let totalChar = firstName.length + lastName.length ;
+    let userName = firstThreeFirstName + lastThreeLastName + totalChar;
     return userName
 }
 console.log('Exercise 11 Result:', createUserName("Samantha", "Green"));
+//ex12 
+function numArgs(){
+   return arguments.length;
+}
+console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
+
