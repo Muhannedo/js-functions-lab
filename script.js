@@ -82,3 +82,33 @@ function basicCalculator(number1 , number2 , operation){
     }
 }
 console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
+//level Up 
+//Exercise 10
+function calculateGrade(score){
+    if (score>=90){
+        return "A"
+    }
+    else if (score >=80 && score <=89){
+        return "B"
+    }
+    else if (score >=70 && score <=79){
+        return "C"
+    }
+    else if (score >=60 && score <=69){
+        return "D"
+    }
+    else {
+        return "F"
+    }
+
+}
+console.log('Exercise 10 Result:', calculateGrade(85));
+//Exercise 11
+function createUserName(firstName , lastName){
+    let firstThreeFirstName = firstName.substring(0,3);
+    let lastThreeLastName = lastName.substring(0,3);
+    let totalChar = firstName.length + lastName.length 
+    let userName = firstThreeFirstName + lastThreeLastName + totalChar
+    return userName
+}
+console.log('Exercise 11 Result:', createUserName("Samantha", "Green"));
